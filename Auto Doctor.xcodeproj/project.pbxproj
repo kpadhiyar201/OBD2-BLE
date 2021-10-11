@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044DC5782700BE65007AA1BC /* AvailableDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DC5762700BE65007AA1BC /* AvailableDeviceCell.swift */; };
+		044DC5792700BE65007AA1BC /* AvailableDeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044DC5772700BE65007AA1BC /* AvailableDeviceCell.xib */; };
+		0458922927088F540067C767 /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458922827088F540067C767 /* BluetoothService.swift */; };
+		0458922B27088FAC0067C767 /* BluetoothConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458922A27088FAC0067C767 /* BluetoothConnectionHandler.swift */; };
+		0458922D27088FD40067C767 /* BluetoothEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458922C27088FD40067C767 /* BluetoothEventHandler.swift */; };
+		0458922F2708901E0067C767 /* BluetoothCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458922E2708901E0067C767 /* BluetoothCommands.swift */; };
+		04589231270890470067C767 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04589230270890470067C767 /* FlowController.swift */; };
+		04589233270890620067C767 /* PairingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04589232270890620067C767 /* PairingFlow.swift */; };
+		0479E01727007D530093506F /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0479E01627007D530093506F /* ExternalAccessory.framework */; };
+		04AA71962700A4C200520B24 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AA71952700A4C200520B24 /* CoreBluetooth.framework */; };
+		098F2AD226F8D526002BA4D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F2AD126F8D526002BA4D9 /* AppDelegate.swift */; };
+		098F2AD626F8D526002BA4D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F2AD526F8D526002BA4D9 /* ViewController.swift */; };
+		098F2AD926F8D526002BA4D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098F2AD726F8D526002BA4D9 /* Main.storyboard */; };
+		098F2ADB26F8D527002BA4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098F2ADA26F8D527002BA4D9 /* Assets.xcassets */; };
+		098F2ADE26F8D527002BA4D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098F2ADC26F8D527002BA4D9 /* LaunchScreen.storyboard */; };
+		098F2B0B26F8DCAF002BA4D9 /* AvailableDevicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098F2B0A26F8DCAF002BA4D9 /* AvailableDevicesVC.swift */; };
+		09C6B96026FE395E00BEDA2E /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6B95F26FE395E00BEDA2E /* UIStoryboard+Extension.swift */; };
+		09C6B96326FE39DF00BEDA2E /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6B96226FE39DF00BEDA2E /* UITableView+Extension.swift */; };
+		15FAF1312711D6DB00874393 /* LTSupportAutomotiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FAF1302711D6DB00874393 /* LTSupportAutomotiveVC.m */; };
+		DB51A041D25516651C886DF4 /* Pods_Auto_Doctor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12873636DA79225187DAE48 /* Pods_Auto_Doctor.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		044DC5762700BE65007AA1BC /* AvailableDeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableDeviceCell.swift; sourceTree = "<group>"; };
+		044DC5772700BE65007AA1BC /* AvailableDeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvailableDeviceCell.xib; sourceTree = "<group>"; };
+		0458922827088F540067C767 /* BluetoothService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothService.swift; sourceTree = "<group>"; };
+		0458922A27088FAC0067C767 /* BluetoothConnectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothConnectionHandler.swift; sourceTree = "<group>"; };
+		0458922C27088FD40067C767 /* BluetoothEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothEventHandler.swift; sourceTree = "<group>"; };
+		0458922E2708901E0067C767 /* BluetoothCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothCommands.swift; sourceTree = "<group>"; };
+		04589230270890470067C767 /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		04589232270890620067C767 /* PairingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingFlow.swift; sourceTree = "<group>"; };
+		0479E01527007D530093506F /* Auto Doctor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Auto Doctor.entitlements"; sourceTree = "<group>"; };
+		0479E01627007D530093506F /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		04AA71952700A4C200520B24 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		098F2ACE26F8D526002BA4D9 /* Auto Doctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Doctor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		098F2AD126F8D526002BA4D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		098F2AD526F8D526002BA4D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		098F2AD826F8D526002BA4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		098F2ADA26F8D527002BA4D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		098F2ADD26F8D527002BA4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		098F2ADF26F8D527002BA4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		098F2B0A26F8DCAF002BA4D9 /* AvailableDevicesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableDevicesVC.swift; sourceTree = "<group>"; };
+		09C6B95F26FE395E00BEDA2E /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		09C6B96226FE39DF00BEDA2E /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		15FAF1212711D3DC00874393 /* Auto Doctor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Auto Doctor-Bridging-Header.h"; sourceTree = "<group>"; };
+		15FAF12F2711D6DB00874393 /* LTSupportAutomotiveVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTSupportAutomotiveVC.h; sourceTree = "<group>"; };
+		15FAF1302711D6DB00874393 /* LTSupportAutomotiveVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTSupportAutomotiveVC.m; sourceTree = "<group>"; };
+		56046A9DCF9A172BB4A8867D /* Pods-Auto Doctor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auto Doctor.debug.xcconfig"; path = "Target Support Files/Pods-Auto Doctor/Pods-Auto Doctor.debug.xcconfig"; sourceTree = "<group>"; };
+		BFC4EA37A2E7C7C0321EBB53 /* Pods-Auto Doctor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auto Doctor.release.xcconfig"; path = "Target Support Files/Pods-Auto Doctor/Pods-Auto Doctor.release.xcconfig"; sourceTree = "<group>"; };
+		C12873636DA79225187DAE48 /* Pods_Auto_Doctor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auto_Doctor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		098F2ACB26F8D526002BA4D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0479E01727007D530093506F /* ExternalAccessory.framework in Frameworks */,
+				04AA71962700A4C200520B24 /* CoreBluetooth.framework in Frameworks */,
+				DB51A041D25516651C886DF4 /* Pods_Auto_Doctor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		098F2AC526F8D526002BA4D9 = {
+			isa = PBXGroup;
+			children = (
+				098F2AD026F8D526002BA4D9 /* Auto Doctor */,
+				098F2ACF26F8D526002BA4D9 /* Products */,
+				923172AF602E20040488ADFA /* Pods */,
+				8480C39607E896036AF3E1AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		098F2ACF26F8D526002BA4D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				098F2ACE26F8D526002BA4D9 /* Auto Doctor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		098F2AD026F8D526002BA4D9 /* Auto Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				0479E01527007D530093506F /* Auto Doctor.entitlements */,
+				15FAF1212711D3DC00874393 /* Auto Doctor-Bridging-Header.h */,
+				098F2AD126F8D526002BA4D9 /* AppDelegate.swift */,
+				098F2AD526F8D526002BA4D9 /* ViewController.swift */,
+				15FAF1342712D37600874393 /* Extensions */,
+				15FAF12C2711D60600874393 /* Classes */,
+				15FAF12D2711D62000874393 /* Available Devices */,
+				15FAF12F2711D6DB00874393 /* LTSupportAutomotiveVC.h */,
+				15FAF1302711D6DB00874393 /* LTSupportAutomotiveVC.m */,
+				098F2AD726F8D526002BA4D9 /* Main.storyboard */,
+				098F2ADA26F8D527002BA4D9 /* Assets.xcassets */,
+				098F2ADC26F8D527002BA4D9 /* LaunchScreen.storyboard */,
+				098F2ADF26F8D527002BA4D9 /* Info.plist */,
+			);
+			path = "Auto Doctor";
+			sourceTree = "<group>";
+		};
+		15FAF12C2711D60600874393 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0458922827088F540067C767 /* BluetoothService.swift */,
+				0458922A27088FAC0067C767 /* BluetoothConnectionHandler.swift */,
+				0458922C27088FD40067C767 /* BluetoothEventHandler.swift */,
+				0458922E2708901E0067C767 /* BluetoothCommands.swift */,
+				04589230270890470067C767 /* FlowController.swift */,
+				04589232270890620067C767 /* PairingFlow.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		15FAF12D2711D62000874393 /* Available Devices */ = {
+			isa = PBXGroup;
+			children = (
+				098F2B0A26F8DCAF002BA4D9 /* AvailableDevicesVC.swift */,
+				044DC5762700BE65007AA1BC /* AvailableDeviceCell.swift */,
+				044DC5772700BE65007AA1BC /* AvailableDeviceCell.xib */,
+			);
+			path = "Available Devices";
+			sourceTree = "<group>";
+		};
+		15FAF1342712D37600874393 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				09C6B95F26FE395E00BEDA2E /* UIStoryboard+Extension.swift */,
+				09C6B96226FE39DF00BEDA2E /* UITableView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8480C39607E896036AF3E1AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04AA71952700A4C200520B24 /* CoreBluetooth.framework */,
+				0479E01627007D530093506F /* ExternalAccessory.framework */,
+				C12873636DA79225187DAE48 /* Pods_Auto_Doctor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		923172AF602E20040488ADFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56046A9DCF9A172BB4A8867D /* Pods-Auto Doctor.debug.xcconfig */,
+				BFC4EA37A2E7C7C0321EBB53 /* Pods-Auto Doctor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		098F2ACD26F8D526002BA4D9 /* Auto Doctor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 098F2AE226F8D527002BA4D9 /* Build configuration list for PBXNativeTarget "Auto Doctor" */;
+			buildPhases = (
+				43F58D7DE01D40E30BC38807 /* [CP] Check Pods Manifest.lock */,
+				098F2ACA26F8D526002BA4D9 /* Sources */,
+				098F2ACB26F8D526002BA4D9 /* Frameworks */,
+				098F2ACC26F8D526002BA4D9 /* Resources */,
+				C77B8FA4253935848D3221D2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Auto Doctor";
+			productName = "Auto Doctor";
+			productReference = 098F2ACE26F8D526002BA4D9 /* Auto Doctor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		098F2AC626F8D526002BA4D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					098F2ACD26F8D526002BA4D9 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 098F2AC926F8D526002BA4D9 /* Build configuration list for PBXProject "Auto Doctor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 098F2AC526F8D526002BA4D9;
+			productRefGroup = 098F2ACF26F8D526002BA4D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				098F2ACD26F8D526002BA4D9 /* Auto Doctor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		098F2ACC26F8D526002BA4D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098F2ADE26F8D527002BA4D9 /* LaunchScreen.storyboard in Resources */,
+				044DC5792700BE65007AA1BC /* AvailableDeviceCell.xib in Resources */,
+				098F2ADB26F8D527002BA4D9 /* Assets.xcassets in Resources */,
+				098F2AD926F8D526002BA4D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43F58D7DE01D40E30BC38807 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Auto Doctor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C77B8FA4253935848D3221D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Auto Doctor/Pods-Auto Doctor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Auto Doctor/Pods-Auto Doctor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Auto Doctor/Pods-Auto Doctor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		098F2ACA26F8D526002BA4D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098F2B0B26F8DCAF002BA4D9 /* AvailableDevicesVC.swift in Sources */,
+				04589233270890620067C767 /* PairingFlow.swift in Sources */,
+				098F2AD626F8D526002BA4D9 /* ViewController.swift in Sources */,
+				0458922B27088FAC0067C767 /* BluetoothConnectionHandler.swift in Sources */,
+				098F2AD226F8D526002BA4D9 /* AppDelegate.swift in Sources */,
+				044DC5782700BE65007AA1BC /* AvailableDeviceCell.swift in Sources */,
+				09C6B96026FE395E00BEDA2E /* UIStoryboard+Extension.swift in Sources */,
+				04589231270890470067C767 /* FlowController.swift in Sources */,
+				0458922D27088FD40067C767 /* BluetoothEventHandler.swift in Sources */,
+				0458922927088F540067C767 /* BluetoothService.swift in Sources */,
+				15FAF1312711D6DB00874393 /* LTSupportAutomotiveVC.m in Sources */,
+				0458922F2708901E0067C767 /* BluetoothCommands.swift in Sources */,
+				09C6B96326FE39DF00BEDA2E /* UITableView+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		098F2AD726F8D526002BA4D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				098F2AD826F8D526002BA4D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		098F2ADC26F8D527002BA4D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				098F2ADD26F8D527002BA4D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		098F2AE026F8D527002BA4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		098F2AE126F8D527002BA4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		098F2AE326F8D527002BA4D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56046A9DCF9A172BB4A8867D /* Pods-Auto Doctor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Auto Doctor/Auto Doctor.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 26SP6998ZS;
+				INFOPLIST_FILE = "Auto Doctor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xap.guardian;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = XapGuardian_21Apr2020;
+				SWIFT_OBJC_BRIDGING_HEADER = "Auto Doctor/Auto Doctor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		098F2AE426F8D527002BA4D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFC4EA37A2E7C7C0321EBB53 /* Pods-Auto Doctor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Auto Doctor/Auto Doctor.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 26SP6998ZS;
+				INFOPLIST_FILE = "Auto Doctor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xap.guardian;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = XapGuardian_21Apr2020;
+				SWIFT_OBJC_BRIDGING_HEADER = "Auto Doctor/Auto Doctor-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		098F2AC926F8D526002BA4D9 /* Build configuration list for PBXProject "Auto Doctor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				098F2AE026F8D527002BA4D9 /* Debug */,
+				098F2AE126F8D527002BA4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		098F2AE226F8D527002BA4D9 /* Build configuration list for PBXNativeTarget "Auto Doctor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				098F2AE326F8D527002BA4D9 /* Debug */,
+				098F2AE426F8D527002BA4D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 098F2AC626F8D526002BA4D9 /* Project object */;
+}
