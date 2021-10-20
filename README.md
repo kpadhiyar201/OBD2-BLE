@@ -27,7 +27,8 @@ Now click on `Pair` button to make connection with OBD BLE device.
 
 If device is successfully connected then label text will be changed to `Status: pairing successful`.
 Click on `LTSupportAutomotive` button to check sensor data. When device starts getting sensor data, it will display data like below image.
-![Image1](https://github.com/kpadhiyar201/OBD2-BLE/blob/Development/2.png?raw=true)
+
+![Image2](https://github.com/kpadhiyar201/OBD2-BLE/blob/Development/2.png?raw=true)
 
 ## Acknowledgements
 #### Dependency
