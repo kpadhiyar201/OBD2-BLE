@@ -19,7 +19,7 @@ pod install
 
 ### Project Usage
 After successfully run project you will have screen as below.
-./1.png
+../1.png
 
 Check label at top for bluetooth status. If it is powered off please go to settings and power on bluetooth.
 Now click on `Pair` button to make connection with OBD BLE device.
@@ -27,7 +27,7 @@ Now click on `Pair` button to make connection with OBD BLE device.
 
 If device is successfully connected then label text will be changed to `Status: pairing successful`.
 Click on `LTSupportAutomotive` button to check sensor data. When device starts getting sensor data, it will display data like below image.
-./2.png
+../2.png
 
 ## Acknowledgements
 #### Dependency
